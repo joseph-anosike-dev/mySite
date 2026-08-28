@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!--
+        Makes the layout scale correctly on phones and tablets.
+        Without this, mobile browsers may render the page as if
+        it were a much wider desktop viewport.
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Business development with a technical and creative edge."
+    >
+
+    <title>Joseph Anosike — Business Development</title>
+
+    <!--
+        We are deliberately NOT using:
+        - Bootstrap
+        - Tailwind
+        - React
+        - jQuery
+        - Google Fonts
+        - Any external library
+
+        The site is completely self-contained.
+    -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <!--
+        IMPORTANT:
+        "defer" allows the HTML document to be parsed before
+        JavaScript executes.
+
+        This prevents JavaScript from blocking page rendering.
+    -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!--CUSTOM CURSOR-->
+    <!--These two elements are controlled by JavaScript. The cursor is intentionally subtle rather than being an obnoxious animated gimmick.-->
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+
+
+    <!--NAVIGATION-->
+    <header class="site-header">
+
+        <nav class="navbar container">
+
+            <a href="#top" class="logo">
+                JosephAnosike<span>.</span><span class="logo-light">BusinessDevelopment</span>
+            </a>
+
+            <!--
+                Mobile menu button.
+
+                The actual navigation is hidden on smaller screens
+                and opened through JavaScript.
+            -->
+            <button
+                class="menu-toggle"
+                aria-label="Open navigation"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-links">
+
+                <a href="#about">About</a>
+                <a href="#capabilities">Skills</a>
+                <a href="#approach">My Approach</a>
+                <a href="#work">Work</a>
+
+                <a href="#contact" class="nav-contact">
+                    Let's talk
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!--MAIN CONTENT-->
+    <main id="top">
+
+
+        <!--HERO-->
+
+        <section class="hero">
+
+            <div class="container hero-grid">
+
+                <div class="hero-content">
+
+                    <p class="eyebrow reveal">
+                        BUSINESS DEVELOPMENT / DIGITAL
+                    </p>
+
+                    <h1 class="hero-title reveal">
+                        I find
+                        <span class="accent-word">opportunities.</span>
+                        I build what comes next.
+                    </h1>
+
+                    <p class="hero-description reveal">
+                        Business development with a technical and
+                        creative edge — combining customer understanding,
+                        sales, strategy, design and web technology.
+                    </p>
+
+                    <div class="hero-actions reveal">
+
+                        <a href="#work" class="button button-dark">
+                            Explore my work
+                        </a>
+
+                        <a href="#contact" class="text-link">
+                            Start a conversation
+                            <span>↗</span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!--
+                    This is deliberately not a conventional
+                    "profile card".
+
+                    It gives the hero a visual identity without
+                    turning the page into a dashboard.
+                -->
+                <div class="hero-visual reveal">
+
+                    <div class="visual-frame">
+
+                        <div class="visual-top">
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="visual-center">
+
+                            <div class="orbit orbit-one"></div>
+                            <div class="orbit orbit-two"></div>
+                            <div class="orbit orbit-three"></div>
+                            <div class="orbit orbit-four"></div>
+                            <div class="orbit orbit-five"></div>
+
+                            <div class="visual-core">
+                                <span></span>
+                                <strong></strong>
+                                <span></span>
+                            </div>
+
+                        </div>
+
+                        <div class="visual-bottom">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!--INTRO STATEMENT-->
+        <section class="statement section">
+
+            <div class="container">
+
+                <p class="section-label reveal">
+                    01 / THE IDEA
+                </p>
+
+                <h2 class="statement-title reveal">
+                    Business problems rarely fit neatly
+                    into one discipline.
+                </h2>
+
+                <p class="statement-copy reveal">
+                    That's why I work across the gap between
+                    people, business and technology. I can research
+                    an opportunity, understand the customer,
+                    develop the message, design the experience
+                    and help turn the idea into a working digital
+                    product.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!--ABOUT-->
+
+        <section id="about" class="about section section-dark">
+
+            <div class="container about-grid">
+
+                <div>
+
+                    <p class="section-label light reveal">
+                        02 / ABOUT
+                    </p>
+
+                    <h2 class="section-title light reveal">
+                        Commercial thinking.
+                        Technical hands.
+                    </h2>
+
+                </div>
+
+                <div class="about-copy">
+
+                    <p class="large-copy reveal">
+                        My primary discipline is business development.
+                    </p>
+
+                    <p class="reveal">
+                        I study how businesses acquire <strong>customers</strong>,
+                        communicate <strong>value</strong> and create <strong>opportunities</strong>.<br>
+                    </p>
+
+                     <p class="reveal">
+                        My <strong>technical</strong> and <strong>creative</strong> skills allow me
+                        to go beyond identifying those opportunities
+                        and <strong>participate</strong> in building the solutions.
+                    </p>
+
+                    <p class="reveal">
+                        That means I can move <strong>comfortably</strong> between
+                        a sales conversation, a strategy document,
+                        a wireframe, a landing page and actual source code.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!--CAPABILITIES-->
+
+        <section id="capabilities" class="capabilities section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+                        <p class="section-label reveal">
+                            03 / SKILLS
+                        </p>
+
+                        <h2 class="section-title reveal">
+                            One core discipline.
+                            Multiple tools.
+                        </h2>
+                    </div>
+
+                    <p class="heading-note reveal">
+                        The tools change depending on the problem.
+                        The objective doesn't.
+                    </p>
+
+                </div>
+
+
+                <div class="capability-list">
+
+
+                    <!-- Business Development -->
+
+                    <article class="capability reveal">
+
+                        <div class="capability-number">
+                            01
+                        </div>
+
+                        <div class="capability-main">
+
+                            <h3>
+                                Business Development
+                            </h3>
+
+                            <p>
+                                Finding <strong>opportunities</strong> and turning
+                                them into <strong>commercially useful</strong>
+                                relationships, offers and deals.
+                            </p>
+
+                            <div class="tags">                                
+                                <span>Research</span>
+                                <span>Strategy</span>
+                                <span>Prospecting</span>
+                                <span>Qualification</span>
+                                <span>Sales</span>                            
+                            </div>
+
+                        </div>
+
+                        <div class="capability-arrow">
+                            ↗
+                        </div>
+
+                    </article>
+
+
+                    <!-- Marketing -->
+
+                    <article class="capability reveal">
+
+                        <div class="capability-number">
+                            02
+                        </div>
+
+                        <div class="capability-main">
+
+                            <h3>
+                                Marketing
+                            </h3>
+
+                            <p>
+                                Understanding <strong>audiences</strong> and
+                                communicating <strong>value</strong> clearly enough
+                                to move people toward <strong>action</strong>.
+                            </p>
+
+                            <div class="tags">
+                                <span>Copywriting</span>
+                                <span>Advertising</span>
+                                <span>Graphic Design</span>
+                                <span>Positioning</span>
+                                <span>Messaging</span>
+                                <span>Conversion</span>
+                            </div>
+
+                        </div>
+
+                        <div class="capability-arrow">
+                            ↗
+                        </div>
+
+                    </article>
+
+
+                    <!-- Product Design -->
+
+                    <article class="capability reveal">
+
+                        <div class="capability-number">
+                            03
+                        </div>
+
+                        <div class="capability-main">
+
+                            <h3>
+                               Product Design
+                            </h3>
+
+                            <p>
+                                Translating <strong>business objectives</strong>
+                                into interfaces that are<strong> clear,
+                                useful and intentional</strong>.
+                            </p>
+
+                            <div class="tags">
+                                <span>UI</span>
+                                <span>UX</span>
+                                <span>Wireframing</span>
+                                <span>Canva</span>
+                                <span>Figma</span>
+                            </div>
+
+                        </div>
+
+                        <div class="capability-arrow">
+                            ↗
+                        </div>
+
+                    </article>
+
+
+                    <!-- Development -->
+
+                    <article class="capability reveal">
+
+                        <div class="capability-number">
+                            04
+                        </div>
+
+                        <div class="capability-main">
+
+                            <h3>
+                                Web Development
+                            </h3>
+
+                            <p>
+                                Building </strong>digital</strong>
+                                experiences and understanding
+                                the </strong>technology</strong> behind them.
+                            </p>
+
+                            <div class="tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>TypeScript</span>
+                                <span>Tailwind CSS</span>
+                                <span>React</span>
+                                <span>React Native</span>
+                                <span>Node.js</span>
+                                <span>Express.js</span>
+                                <span>REST</span>
+                                <span>Python</span>
+                                <span>PostgreSQL</span> 
+                                <span>MongoDB</span> 
+                                <span>Auth</span>
+                            </div>
+
+                        </div>
+
+                        <div class="capability-arrow">
+                            ↗
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!--APPROACH-->
+
+        <section id="approach" class="approach section section-ash">
+
+            <div class="container">
+
+                <p class="section-label reveal">
+                    04 / APPROACH
+                </p>
+
+                <div class="approach-grid">
+
+                    <div class="approach-intro">
+
+                        <h2 class="section-title reveal">
+                            Start with the
+                            problem.
+                        </h2>
+
+                        <p class="reveal">
+                            Technology is a tool. Design is a tool.
+                            Marketing is a tool. The first job is
+                            understanding what actually needs to
+                            happen and getting it done.
+                        </p>
+
+                    </div>
+
+
+                    <div class="process">
+
+                        <div class="process-item reveal">
+
+                            <span>01</span>
+
+                            <div>
+                                <h3>Identify</h3>
+                                <p>
+                                    Find the opportunity and understand
+                                    the underlying problem.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="process-item reveal">
+
+                            <span>02</span>
+
+                            <div>
+                                <h3>Understand</h3>
+                                <p>
+                                    Research the customer, market,
+                                    competition and economics.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="process-item reveal">
+
+                            <span>03</span>
+
+                            <div>
+                                <h3>Develop</h3>
+                                <p>
+                                    Shape the offer, message,
+                                    experience or solution.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="process-item reveal">
+
+                            <span>04</span>
+
+                            <div>
+                                <h3>Execute</h3>
+                                <p>
+                                    Put it into the world, measure
+                                    the response and improve it.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!--WORK-->
+
+        <section id="work" class="work section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <p class="section-label reveal">
+                            05 / SELECTED WORK
+                        </p>
+
+                        <h2 class="section-title reveal">
+                            Work that connects
+                            thinking with execution.
+                        </h2>
+
+                    </div>
+
+                </div>
+
+                 <article class="work-card work-card-large reveal">
+
+                        <div class="work-card-top">
+                            <span>01</span>
+                            <span>BUSINESS / DIGITAL</span>
+                        </div>
+
+                        <div class="work-placeholder">
+                            <img src="img/installation.webp">
+                        </div>
+
+                        <div class="work-info">
+
+                            <h3>
+                                Digital Growth Concept
+                            </h3>
+
+                            <p>
+                                A hypothetical business development
+                                case study demonstrating research,
+                                positioning and digital execution.
+                            </p>
+
+                            <a href="login.html?project=Digital Growth Concept">
+                                View case study ↗
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                <div class="work-grid">
+
+                    <article class="work-card reveal">
+
+                        <div class="work-card-top">
+                            <span>02</span>
+                            <span>UI / UX</span>
+                        </div>
+
+                        <div class="work-placeholder prod-design">
+                            <img src="img/design.png">
+                        </div>
+
+                        <div class="work-info">
+
+                            <h3>
+                                Interface Concept
+                            </h3>
+
+                            <p>
+                                Product interface focused on
+                                clarity, usability and conversion.
+                            </p>
+
+                            <a href="login.html?project=Interface Concept">
+                                View project ↗
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="work-card reveal">
+
+                        <div class="work-card-top">
+                            <span>03</span>
+                            <span>WEB</span>
+                        </div>
+
+                        <div class="work-placeholder">
+                            <img src="img/screenshot.png">
+                        </div>
+
+                        <div class="work-info">
+
+                            <h3>
+                                Lightweight Web Build
+                            </h3>
+
+                            <p>
+                                A fast, responsive website built
+                                without unnecessary dependencies.
+                            </p>
+
+                            <a href="login.html?project=Lightweight Web Build">
+
+                                View project ↗
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!--CONTACT-->
+
+        <section id="contact" class="contact section section-dark">
+
+            <div class="container">
+
+                <p class="section-label light reveal">
+                    06 / CONTACT
+                </p>
+
+                <h2 class="contact-title reveal">
+                    Have a problem
+                    worth solving?
+                </h2>
+
+                <p class="contact-copy reveal">
+                    I'm interested in opportunities where business
+                    thinking, technology and creativity can produce
+                    something useful.
+                </p>
+
+                <a
+                    href="mailto:josephmake.com@gmail.com"
+                    class="contact-email reveal"
+                >
+                    send me an email
+                    <span>↗</span>
+                </a>
+
+                <br>
+                
+                <a
+                    href="https://wa.me/2348144176666?text=Hello%20Joseph%2C%20my%20name%20is%20________%0AI%20just%20came%20from%20the%20website"
+                    class="contact-email reveal"
+                >
+                    or text me on Whatsapp
+                    <span>↗</span>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!--FOOTER-->
+    <footer class="footer">
+
+        <div class="container footer-inner">
+
+            <p>
+                © <span id="year">2026</span> Joseph Anosike. All Rights Reserved.
+            </p>
+
+            <a href="https://github.com/joseph-anosike-dev">
+                View Github
+            </a>
+            
+
+            <a href="#top">
+                Back to top ↑
+            </a>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
